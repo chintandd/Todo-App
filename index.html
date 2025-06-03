@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <script src="todo.js" defer></script>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="left">
+                <div class="hello">
+                    <h1>Hello<br><span class="display-name"></span></h1>
+                </div>
+                <div class="time">
+                    <p><span class="day"></span><span class="date"></span></p>
+                </div>
+            </div>
+            <div class="theme-container">
+                <div class="theme-title"><i class="ri-brush-fill brush"></i>Theme</div>
+                <div class="theme-box hidden">
+
+                </div>
+                <button class="logout handleZ"><i class="ri-logout-box-r-line"></i>Logout</button>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <div class="taskbar-section">
+                <p class="task-complete">0/1 Completed</p>
+                <div class="bar">
+                    <div class="taskbar"></div>
+                </div>
+                <div class="taskbar-error visible"></div>
+            </div>
+            <div class="task-list">
+            </div>
+            <button class="add-task"><i class="ri-add-line"></i>
+                <p>New Task</p>
+            </button>
+        </div>
+
+
+    </main>
+    <div class="overlay">
+        <div class="form-section login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <input type="text" name="name" class="input-name" placeholder="Name">
+                    <i class="ri-user-4-line"></i>
+                </div>
+                <span class="name-error"></span>
+                <div class="input-box">
+                    <input type="password" name="password" class="login-password" placeholder="Password">
+                    <i class="ri-eye-fill pass-toggle"></i>
+                </div>
+                <span class="password-error"></span>
+                <button type="submit" class="login">Login</button>
+                <a class="register-click user" href="">
+                    <p>New User ? </p>Register
+                </a>
+            </form>
+        </div>
+        <div class="form-section signup hidden">
+            <h2>Sign up</h2>
+            <form id="signupForm">
+                <div class="input-box">
+                    <input type="text" name="name" class="sign-input-name" placeholder="Name">
+                    <i class="ri-user-4-line"></i>
+                </div>
+                <span class="sign-name-error"></span>
+                <div class="input-box">
+                    <input type="password" name="password" class="signup-password" placeholder="Password">
+                    <i class="ri-eye-fill pass-toggle"></i>
+                </div>
+                <span class="sign-password-error"></span>
+                <div class="input-box">
+                    <input type="password" name="password" class="c-password" placeholder="Confirm Password">
+                    <i class="ri-eye-fill pass-toggle"></i>
+                </div>
+                <span class="sign-c-password-error"></span>
+                <button type="submit" class="submit">Submit</button>
+                <a class="already-user-click user" href="">
+                    <p>Already User ? </p>Login
+                </a>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
